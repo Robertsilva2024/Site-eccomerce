@@ -22,7 +22,7 @@
                 </tr>
             </thead>
             <tbody>
-                
+
                 {% for order in orders %}
                 <tr>
                     <td>{{forloop.counter}}</td>
@@ -38,12 +38,22 @@
                     <td><small class="badge badge-warning">Pendente</small></td>
                     {% endif %}
                 </tr>
+                <table class="table">
 
                 {% endfor %}
-               
+
             </tbody>
 
         </table>
+<ul class="navbar-nav ml-0">
+  <li class="nav-item active">
+    <a class="nav-link" href="/logout">
+      <strong class="h5">Sair</strong>
+      <span class="sr-only" style="background-color: azure">(current)</span>
+    </a>
+  </li>
+</ul>
+
        
    </div>
 </div>
